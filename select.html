@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Name</th>
+                <th>Name</th>
+                <th>Name</th>
+                <th>Name</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="body-list">
+            <tr class="data" id="list">
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr class="data" id="list">
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr class="data" id="list">
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        // let res = document.querySelector('tbody').getElementsByTagName('tr')
+        // console.log(res)
+        //res.style.color ="red"
+        //res[0].style.color = "red"
+        // for(let i=0; i<res.length; i++){res[i].style.color='red'}
+        
+        // res = Array.from(res)
+        // res.forEach(function(){
+        //     console.log(res)
+        // })
+        // -------------------------------------------------------
+        let box;
+        let table = document.querySelector('#body-list')
+        box = table.children[0].children[2].textContent = 'b'
+        table.children[0].children[2].style.backgroundColor = 'red'
+        console.log(box)
+    </script>
+</body>
+</html>

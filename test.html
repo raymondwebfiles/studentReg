@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name1">
+    <input type="text" id="name2">
+    <input type="button" value="Save" id="save">
+    <hr>
+    <table class="table" border="2">
+        <thead>
+            <tr>
+                <td>Firstname</td><td>Lastname</td>
+            </tr>
+        </thead>
+        <tbody class="body">
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let name1 = document.querySelector('#name1')
+        let name2 = document.querySelector('#name2')
+        let btn = document.querySelector('input[id="save"]')
+        let table = document.querySelector('.table')
+        
+        btn.addEventListener('click',()=>{
+            let tr = document.createElement('tr')
+            
+            let td1 = tr.appendChild(document.createElement('td'))
+            let td2 = tr.appendChild(document.createElement('td'))
+            
+            td1.innerHTML = name1.value
+            td2.innerHTML = name2.value
+
+            table.appendChild(tr)
+        })
+        
+    </script>
+</body>
+</html>
